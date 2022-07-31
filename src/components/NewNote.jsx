@@ -5,7 +5,7 @@ import { createNote } from '../reducers/noteReducer';
 function NewNote() {
   const dispatch = useDispatch();
 
-  function addNote(event) {
+  async function addNote(event) {
     event.preventDefault();
     const content = event.target.note.value;
     /* eslint-disable-next-line */
